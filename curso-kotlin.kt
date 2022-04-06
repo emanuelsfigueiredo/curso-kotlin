@@ -17,25 +17,23 @@ fun cargo(escolha: Int) {
     if (escolha == 1) {
         println("quantos anos de experiencia vc tem ")
         experiencia = reader.nextInt()
-        if (experiencia <= 2)
-            println("seu bônus será de R$2.000,00")
-        if (experiencia > 2)
-            println("seu bônus será de R$3.000,00")
 
-        if (escolha == 2)
-            println("quantos anos de experiencia vc tem ?")
+    if (experiencia <= 2)
+        println("seu bônus será de R$2.000,00")
+     else if (experiencia > 2)
+        println("seu bônus será de R$3.000,00")
+    } else if (escolha == 2) {
+        println("quantos anos de experiencia vc tem ?")
         experiencia = reader.nextInt()
-        if (experiencia <= 1)
-            println("seu bônus será de R$1.500,00")
-        if (experiencia > 1)
-            println("seu bônus será de R$1.800,00")
 
-
-        if (escolha == 3)
-            println("seu bônus será de R$1.000,00")
-
-        if (escolha == 4)
-            println("seu bônus será de R$500,00")
+    if (experiencia <= 1)
+        println("seu bônus será de R$1.500,00")
+    else if (experiencia > 1)
+        println("seu bônus será de R$1.800,00")
+    } else if (escolha == 3) {
+        println("seu bônus será de R$1.000,00")
+    } else if (escolha == 4) {
+        println("seu bônus será de R$500,00")
     } else {
         println("opção invalida!")
     }
